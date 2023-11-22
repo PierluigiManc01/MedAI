@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cough Analysis Results</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add custom CSS for this page */
+        .results-container {
+            display: flex;
+        }
+
+        .results-left {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .results-right {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .medicine-image {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="resultsScreen" class="centered-screen">
+        <h1>Cough Analysis Results:</h1>
+        <h3> Dry Cough<h3>
+        <div class="results-container">
+            <div class="results-left">
+                
+                <h3>Possible Causes:</h3>
+                <ul>
+                    <li>Viral Infections</li>
+                    <li>Allergies</li>
+                    <li>Irritants (e.g., smoke or dust)</li>
+                </ul>
+                <h3>Home Remedies:</h3>
+                <ul>
+                    <li>Stay hydrated with warm liquids</li>
+                    <li>Use a humidifier to add moisture to the air</li>
+                    <li>Avoid irritants and allergens</li>
+                    <li>Over-the-counter cough syrups</li>
+                </ul>
+            </div>
+            <div class="results-right">
+                <h3>Recommended Medicine for your specific condition</h3>
+                <img src="prj_sapp/images/71t4kxV-LfL._AC_UF1000,1000_QL80_.jpg" alt="CoughEase Medicine" id="medImage">
+                <p class="delivery-text"><strong>Click on it to have it delivered home!</strong></p>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
