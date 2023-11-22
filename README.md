@@ -1,2 +1,1 @@
-# prj_app
-MedAI app
+# MedAI
