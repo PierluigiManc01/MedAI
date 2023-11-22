@@ -1,0 +1,181 @@
+:root {
+    --primary-blue: #2E489B; /* Replace with the exact color code */
+    --secondary-pink: #EFF3FE; /* Replace with the exact color code */
+    --text-color: #FFFFFF; /* White text */
+    --secondary-text-color: #333333; /* Dark gray for secondary text */
+    --button-hover-color: #FFB3C1; /* Lighter pink for button hover state */
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary-blue);
+    color: var(--primary-blue);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, p {
+    color: var(--primary-blue);
+}
+
+.centered-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+.left-screen {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    background-color: var(--primary-blue);
+    color: white;
+}
+/* General button styling */
+button {
+    background-color: var(--secondary-pink);
+    color: var(--primary-blue);
+    border: 2px solid var(--secondary-pink);
+    border-radius: 8px; /**/
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size:  20px
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+}
+
+/* Input field styling */
+input[type="text"], input[type="button"] {
+    border: 2px solid var(--primary-blue);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 30px;
+    margin: 5px 5px;
+
+}
+
+
+/* Navigation bar styling */
+.navbar {
+    background-color: var(--secondary-pink);
+    padding: 10px 10px;
+}
+
+.navbar a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+/* Add other styles for layout, typography, etc., as needed */
+
+#homeScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Use the full viewport height */
+    background-color: var(--secondary-pink);
+    color: var(--primary-blue);
+    text-align: center;
+}
+
+#homeImage {
+    position: absolute; /* Absolute positioning */
+    left: 15px; /* Align to the left */
+    bottom: 15px; /* Align to the bottom */
+    width: 35vw;
+    max-width: 100vw; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#recordScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Use the full viewport height */
+    background-color: var(--secondary-pink);
+    color: var(--primary-blue);
+    text-align: top;
+}
+/* Style for the button that triggers voice recording */
+#recordButton {
+    background-color: var(--secondary-pink);
+    color: var(--text-color);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-top: 50px; /* Add some space above the button */
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sound-waves {
+    width: 50vw; /* 50% of the viewport width */
+    max-width: 400px; /* Max width to prevent it from becoming too large */
+    height: auto; /* Maintain aspect ratio */
+    /*animation: pulse 2s infinite;*/
+    margin-top: 150px; /* Add some space above the image */
+    margin-bottom: 20px; /* Add some space above the image */
+    display: block; /* Ensure it's a block-level element */
+    margin-left: auto; /* Centering the image */
+    margin-right: auto; /* Centering the image */
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Start at normal size */
+        opacity: 0.7; /* Slightly transparent */
+    }
+    50% {
+        transform: scale(1.1); /* Enlarge a bit */
+        opacity: 1; /* Fully opaque */
+    }
+    100% {
+        transform: scale(1); /* Return to normal size */
+        opacity: 0.7; /* Slightly transparent again */
+    }
+}
+
+.animate-wave {
+    animation: pulse 1s linear infinite;
+}
+
+#resultsScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Use the full viewport height */
+    background-color: var(--secondary-pink);
+    color: var(--primary-blue);
+    text-align: top;
+}
+#answerScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Use the full viewport height */
+    background-color: var(--secondary-pink);
+    color: var(--primary-blue);
+    text-align: top;
+}
+
+#medImage {
+    position: relative; /* Absolute positioning */
+    width: 10vw;
+    max-width: 100vw; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
