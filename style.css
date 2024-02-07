@@ -238,7 +238,7 @@ ul li {
 }
 
 .deli-container {
-    border: 4px solid #2E489B; /* Adds a border around the h3 */
+    border: 2px solid #2E489B; /* Adds a border around the h3 */
     padding: 0px 5px; /* Adds some padding inside the box */
     display: inline-block;
     border-radius: 10px;
