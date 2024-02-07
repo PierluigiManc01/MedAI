@@ -162,7 +162,7 @@ input[type="text"], input[type="button"] {
     width: 100vw; /* 50% of the viewport width */
     max-width: 600px; /* Max width to prevent it from becoming too large */
     height: auto; /* Maintain aspect ratio */
-    margin-top: 150px; /* Add some space above the image */
+    margin-top: 80px; /* Add some space above the image */
     margin-bottom: 20px; /* Add some space above the image */
     display: block; /* Ensure it's a block-level element */
     margin-left: auto; /* Centering the image */
