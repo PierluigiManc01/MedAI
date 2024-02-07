@@ -140,8 +140,8 @@ input[type="text"], input[type="button"] {
     text-align: top;
 }
 #recordScreen h1 {
-    font-size: 100px; /* Specific font size for the title */
-    margin-top: 20px; /* Remove top margin from the title if any */
+    font-size: 70px; /* Specific font size for the title */
+    margin-top: 10px; /* Remove top margin from the title if any */
     margin-bottom: 40px; /* Adjust bottom margin to control space after the title */
 }
 /* Style for the button that triggers voice recording */
@@ -231,7 +231,7 @@ ul li {
 }
 
 .deli-container {
-    border: 1px solid #2E489B; /* Adds a border around the h3 */
+    border: 2px solid #2E489B; /* Adds a border around the h3 */
     padding: 0px 5px; /* Adds some padding inside the box */
     display: inline-block;
     border-radius: 10px;
