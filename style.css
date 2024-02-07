@@ -22,7 +22,7 @@ h1, h2, h3, p {
 
 .h5-box {
     margin-top: 0;
-    font-size: 80px; 
+    font-size: 120px; 
     margin-bottom: 5px;
     padding: 5px 5px;
 }
@@ -115,9 +115,9 @@ input[type="text"], input[type="button"] {
 }
 
 #homeScreen h1 {
-    font-size: 80px; /* Specific font size for the title */
+    font-size: 120px; /* Specific font size for the title */
     margin-top: 0; /* Remove top margin from the title if any */
-    margin-bottom: 80px; /* Adjust bottom margin to control space after the title */
+    margin-bottom: 100px; /* Adjust bottom margin to control space after the title */
 }
 
 #homeImage {
