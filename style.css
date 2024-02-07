@@ -1,5 +1,6 @@
 :root {
     --primary-blue: #2E489B; /* Replace with the exact color code */
+    --secondary-blue: #C6D3F5; /* Replace with the exact color code */
     --secondary-pink: #EFF3FE; /* Replace with the exact color code */
     --text-color: #FFFFFF; /* White text */
     --secondary-text-color: #333333; /* Dark gray for secondary text */
@@ -19,6 +20,26 @@ h1, h2, h3, p {
     color: var(--primary-blue);
 }
 
+.h5-box {
+    margin-top: 200px;
+    font-size: 50px; 
+    padding: 5px 5px;
+}
+
+.h4-box {
+    border: 5px solid #FFB3C1; /* Adds a border around the h3 */
+    padding: 5px 10px; /* Adds some padding inside the box */
+    display: inline-block; /* Makes the div behave like an inline element */
+    border-radius: 10px;
+}
+
+ul {
+    list-style: inside; /* Positions bullets inside the content area */
+    padding-left: 0;
+    /*list-style-type: none; /* Removes bullet points */
+    font-size: 2em; 
+}
+
 .centered-screen {
     display: flex;
     flex-direction: column;
@@ -28,6 +49,7 @@ h1, h2, h3, p {
     text-align: center;
     background-color: var(--primary-blue);
     color: white;
+    font-size: 20px;
 }
 
 .left-screen {
@@ -42,12 +64,12 @@ h1, h2, h3, p {
 button {
     background-color: var(--secondary-pink);
     color: var(--primary-blue);
-    border: 2px solid var(--secondary-pink);
+    border: 2px solid var(--primary-blue);
     border-radius: 8px; /**/
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-size:  20px
+    font-size:  25px
 }
 
 button:hover {
@@ -78,19 +100,38 @@ input[type="text"], input[type="button"] {
     display: inline-block;
 }
 
-/* Add other styles for layout, typography, etc., as needed */
-
 #homeScreen {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* Align items to the start of the container */
     align-items: center;
     height: 100vh; /* Use the full viewport height */
     background-color: var(--secondary-pink);
     color: var(--primary-blue);
     text-align: center;
+    font-size: 16px; /* Adjusted for normal text, not the title */
+    padding-top: 20px; /* Add padding at the top of the container */
 }
 
+#homeScreen h1 {
+    font-size: 150px; /* Specific font size for the title */
+    margin-top: 0; /* Remove top margin from the title if any */
+    margin-bottom: 200px; /* Adjust bottom margin to control space after the title */
+}
+/*
+#homeScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: var(--secondary-pink);
+    color: var(--primary-blue);
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 400px;
+}
+*/
 #homeImage {
     position: absolute; /* Absolute positioning */
     left: 15px; /* Align to the left */
@@ -113,20 +154,21 @@ input[type="text"], input[type="button"] {
 /* Style for the button that triggers voice recording */
 #recordButton {
     background-color: var(--secondary-pink);
-    color: var(--text-color);
-    border: none;
-    border-radius: 20px;
+    color: var(--primary-blue);
+    border: 2px solid var(--primary-blue);
     padding: 10px 20px;
-    margin-top: 50px; /* Add some space above the button */
     cursor: pointer;
-    font-size: 16px;
+    transition: background-color 0.3s ease;
+    font-size:  30px;
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin-top: 50px; /* Add some space above the button */
 }
 
 .sound-waves {
-    width: 50vw; /* 50% of the viewport width */
-    max-width: 400px; /* Max width to prevent it from becoming too large */
+    width: 100vw; /* 50% of the viewport width */
+    max-width: 600px; /* Max width to prevent it from becoming too large */
     height: auto; /* Maintain aspect ratio */
-    /*animation: pulse 2s infinite;*/
     margin-top: 150px; /* Add some space above the image */
     margin-bottom: 20px; /* Add some space above the image */
     display: block; /* Ensure it's a block-level element */
@@ -172,10 +214,97 @@ input[type="text"], input[type="button"] {
     color: var(--primary-blue);
     text-align: top;
 }
-
+.results-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 ;
+    max-width: 1300px; 
+}
+.results-left, .results-right {
+    flex: 1;
+    margin: 0 20px; /* Adjust the margin for spacing */
+}
+ul {
+    padding-left: 40px; /* Reduced padding to bring bullets closer to the text */
+}
+ul li {
+    font-size: 0.7em; /* Standard font size for list items */
+}
 #medImage {
     position: relative; /* Absolute positioning */
     width: 10vw;
     max-width: 100vw; /* Adjust the size as needed */
     height: auto; /* Maintain aspect ratio */
+}
+
+.deli-container {
+    border: 4px solid #2E489B; /* Adds a border around the h3 */
+    padding: 0px 20px; /* Adds some padding inside the box */
+    display: inline-block;
+    border-radius: 10px;
+    background-color: var(--button-hover-color);
+    font-size: 35px;
+}
+.delivery-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 180vh;
+    margin: auto;
+    height: 100vh; /* Full viewport height */
+    background-color: var(--secondary-pink);
+    background-image: url('images/Untitled/Untitled.1.jpeg');
+    color: var(--primary-blue);
+    text-align: center;
+    padding: 20px;
+}
+
+.delivery-option {
+    background-color: var(--secondary-blue);
+    color: var(--text-color);
+    border: 4px solid var(--primary-blue);
+    padding: 40px 60px; 
+    margin: 20px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.delivery-option:hover {
+    background-color: var(--button-hover-color);
+    color: var(--secondary-pink);
+    transform: scale(1.05);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .delivery-container {
+        padding: 15px;
+    }
+
+    .delivery-option {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+#deliveryMessage {
+    background-color: var(--secondary-pink);
+    text-align: center;
+    padding: 250px ; 
+    margin-top: 400px;
+    font-size: 80px;
+    
+    
+}
+body {
+    background-image: url('images/Untitled/Untitled.1.jpeg');
+}
+
+.delivery-message-container{
+    
+    color: var(--primary-blue);
 }
