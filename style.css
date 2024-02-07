@@ -111,28 +111,15 @@ input[type="text"], input[type="button"] {
     color: var(--primary-blue);
     text-align: center;
     font-size: 18px; /* Adjusted for normal text, not the title */
-    padding-top: 20px; /* Add padding at the top of the container */
+    padding-top: 10px; /* Add padding at the top of the container */
 }
 
 #homeScreen h1 {
-    font-size: 100px; /* Specific font size for the title */
+    font-size: 80px; /* Specific font size for the title */
     margin-top: 0; /* Remove top margin from the title if any */
-    margin-bottom: 50px; /* Adjust bottom margin to control space after the title */
+    margin-bottom: 80px; /* Adjust bottom margin to control space after the title */
 }
-/*
-#homeScreen {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
-    background-color: var(--secondary-pink);
-    color: var(--primary-blue);
-    text-align: center;
-    font-size: 50px;
-    margin-bottom: 400px;
-}
-*/
+
 #homeImage {
     position: absolute; /* Absolute positioning */
     left: 15px; /* Align to the left */
