@@ -139,6 +139,11 @@ input[type="text"], input[type="button"] {
     color: var(--primary-blue);
     text-align: top;
 }
+#recordScreen h1 {
+    font-size: 100px; /* Specific font size for the title */
+    margin-top: 20px; /* Remove top margin from the title if any */
+    margin-bottom: 40px; /* Adjust bottom margin to control space after the title */
+}
 /* Style for the button that triggers voice recording */
 #recordButton {
     background-color: var(--secondary-pink);
