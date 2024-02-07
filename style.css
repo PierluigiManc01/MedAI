@@ -21,8 +21,8 @@ h1, h2, h3, p {
 }
 
 .h5-box {
-    margin-top: 10px;
-    font-size: 20px; 
+    margin-top: 50px;
+    font-size: 40px; 
     padding: 5px 5px;
 }
 
@@ -238,7 +238,7 @@ ul li {
 }
 
 .deli-container {
-    border: 2px solid #2E489B; /* Adds a border around the h3 */
+    border: 1px solid #2E489B; /* Adds a border around the h3 */
     padding: 0px 5px; /* Adds some padding inside the box */
     display: inline-block;
     border-radius: 10px;
