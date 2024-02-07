@@ -114,7 +114,7 @@ input[type="text"], input[type="button"] {
 }
 
 #homeScreen h1 {
-    font-size: 35px; /* Specific font size for the title */
+    font-size: 50px; /* Specific font size for the title */
     margin-top: 0; /* Remove top margin from the title if any */
     margin-bottom: 10px; /* Adjust bottom margin to control space after the title */
 }
