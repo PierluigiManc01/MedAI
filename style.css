@@ -21,8 +21,8 @@ h1, h2, h3, p {
 }
 
 .h5-box {
-    margin-top: 10px;
-    font-size: 100px; 
+    margin-top: 0;
+    font-size: 80px; 
     margin-bottom: 5px;
     padding: 5px 5px;
 }
